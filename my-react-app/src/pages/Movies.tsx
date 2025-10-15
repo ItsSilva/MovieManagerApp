@@ -13,10 +13,10 @@ const Movies = () => {
   const movies = useSelector((state: RootState) => state.movies.movies);
 
   useEffect(() => {
-    if (data) {
+    if (data && movies.length === 0) {
       dispatch(getMovies(data));
     }
-  }, [data, dispatch]);
+  }, [data, movies.length, dispatch]);
 
   const handleDelete = (id: string) => {
     dispatch(deleteMovie(id));
