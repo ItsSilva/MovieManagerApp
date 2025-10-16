@@ -23,7 +23,7 @@ const Movies = () => {
   };
 
   const handleUpdate = (id: string) => {
-    navigate(`/update-movie/${id}`);
+    navigate(`/edit-movie/${id}`);
   };
 
   return (
