@@ -53,7 +53,7 @@ const EditMovie = () => {
           required
           />
         </div>
-        <button type="submit">Add Movie</button>
+        <button type="submit">Edit Movie</button>
       </form>
     </div>
   );
